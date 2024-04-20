@@ -8,9 +8,14 @@ const todos = [
 
 function getTodoTopics(todos) {
   // Start coding here
+  let split = [];
+  for (let i = 0; i< todos.length; i++) {
+	split.push(todos[i].topic)
+  }
+return split
 }
 
-getTodoTopics(todos);
+console.log(getTodoTopics(todos));
 
 /* 
 	Output:
